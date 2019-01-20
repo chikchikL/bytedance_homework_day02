@@ -5,6 +5,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -21,12 +22,16 @@ public class Exercises2 extends AppCompatActivity {
         setContentView(R.layout.activity_exercise2);
 
         ViewGroup root = findViewById(R.id.root_layout);
+        TextView tv_center = findViewById(R.id.tv_center);
+
         int count = getAllChildViewCount(root);
-        Toast.makeText(this,"View的总个数:"+count+"\n除了根布局个数:"+(count-1),Toast.LENGTH_LONG).show();
+        String center_content = "除根布局外View个数:"+(count-1);
+
+        Toast.makeText(this,center_content,Toast.LENGTH_LONG).show();
+        tv_center.setText(center_content);
     }
 
     public int getAllChildViewCount(View view) {
-        //todo 补全你的代码
         /*
         * 思路：
         * ViewGroup与View实际上是多叉树中父节点与子节点的关系
