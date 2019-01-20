@@ -18,7 +18,7 @@ public class Exercises2 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise3);
+        setContentView(R.layout.activity_exercise2);
 
         ViewGroup root = findViewById(R.id.root_layout);
         int count = getAllChildViewCount(root);
