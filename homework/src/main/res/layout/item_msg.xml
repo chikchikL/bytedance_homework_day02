@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/colorBackground"
+    android:background="@drawable/recycler_item_selector">
+
+    <FrameLayout
+        android:id="@+id/civ_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="12dp">
+        <chapter.android.aweme.ss.com.homework.widget.CircleImageView
+            android:id="@+id/civ_avatar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/icon_blacksend_untouch"/>
+
+        <ImageView
+            android:id="@+id/iv_notice"
+            android:layout_width="26dp"
+            android:layout_height="13dp"
+            android:layout_gravity="end|bottom"/>
+
+    </FrameLayout>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_toRightOf="@id/civ_parent"
+        android:layout_alignTop="@id/civ_parent"
+        android:textColor="#e6ffffff"/>
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:layout_toRightOf="@+id/civ_parent"
+        android:layout_below="@id/tv_name"
+        android:textColor="#80ffffff"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/civ_parent"
+        android:textSize="12sp"
+        android:textColor="#57ffffff" />
+
+
+
+</RelativeLayout>
